@@ -33,5 +33,8 @@ const team = [
 
 for (let i = 0; i < team.length; i++) {
     const currentElement = team[i];
+    const teamObjects = Object.values(team[i]);
+    const printedTeam = document.getElementById("team").innerHTML += `${teamObjects} <br> `;
+
     console.log(currentElement.name, currentElement.role, currentElement.image);
 }
