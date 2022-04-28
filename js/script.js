@@ -1,5 +1,3 @@
-alert("ciao");
-
 const team = [
     {
       name: 'Wayne Barnett',
@@ -32,3 +30,8 @@ const team = [
       image: 'barbara-ramos-graphic-designer.jpg',
     },
   ];
+
+for (let i = 0; i < team.length; i++) {
+    const currentElement = team[i];
+    console.log(currentElement.name, currentElement.role, currentElement.image);
+}
